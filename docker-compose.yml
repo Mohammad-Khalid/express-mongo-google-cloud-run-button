@@ -4,8 +4,6 @@ version: '2'
 services:
   myapp: #name of your service
     build: ./ # specify the directory of the Dockerfile
-    ports:
-      - "8080:8080" #specify ports forwarding
     links:
       - database # link this service to the database service
     volumes:
