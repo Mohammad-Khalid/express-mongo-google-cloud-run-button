@@ -11,6 +11,5 @@ RUN npm install --only=production
 COPY . ./
 
 #Expose port and start application
-EXPOSE 8080
 
 CMD [ "npm", "start" ]
